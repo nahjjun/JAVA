@@ -36,4 +36,8 @@ public class 챕터9_문제27_다단계칫솔판매 {
 		
 		System.out.println(Arrays.toString(solution(enroll,referral,seller,amount)));
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> refs/remotes/origin/master
