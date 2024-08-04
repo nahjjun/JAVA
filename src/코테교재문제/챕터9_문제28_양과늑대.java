@@ -23,16 +23,32 @@ public class 챕터9_문제28_양과늑대 {
 			// 현재 인덱스가 양이면 양 개수를, 늑대면 늑대 개수를 늘려준다.
 			if(info[current]==0) ++sheeps;
 			else ++wolves;
+			confirm[current]=1;
 			
 			// 좌측/우측 자식이 읽힌 노드인지 확인한다
-			int left = treeMap.get(current).get(0);
-			int right = treeMap.get(current).get(1);
-			
-			if(confirm[left]==1 && confirm[right]==1) { // 두 노드 모두 읽힌 경우
-				// current 변수를 자신의 부모 노드로 
+			if(treeMap.get(current).size() == 2) { // 해당 노드가 두개의 자식을 갖고있을 경우
+				int left = treeMap.get(current).get(0);
+				int right = treeMap.get(current).get(1);
+				
+				if(confirm[left]==1 && confirm[right]==1) { // 두 노드 모두 읽힌 경우
+					// current 변수를 자신의 부모 노드로 설정하고 다시 반복문을 진행한다
+					current = parentTreeMap.get(current);
+				}
+				else if(confirm[left]==1) { // 두 노드 중 왼쪽 노드만 읽힌 경우
+					if(info[right] == 0) current=right; // 오른쪽 노드가 양인 경우, 해당 노드로 옮겨간다.
+					else { // 오른쪽 노드가 늑대인 경우, 해당 노드가 양의 개수>늑대 개수 조건을 만족하는지 확인해야함
+						
+					}
+				}
+				else if(confirm[right]==1) { // 두 노드 중 오른쪽 노드만 읽힌 경우
+					
+				}
+				else { // 두 노드 모두 읽히지 않은 경우
+					
+				}
+				
 			}
-			
-			
+				
 			
 		}
 		
