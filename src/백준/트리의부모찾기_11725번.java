@@ -30,7 +30,7 @@ public class 트리의부모찾기_11725번 {
 
         while (!queue.isEmpty()) {
             int current = queue.poll();
-            for (int child : tree.get(current)) { // 해당 부모가 갖고있는 자식들을 for문으로 전부 순회하면서 확인
+            for (int child : tree.get(current)) { // 해당 노드와 연결되어있는 노드들을 for문으로 전부 순회하면서 확인
                 if (!visited[child]) {
                     visited[child] = true;
                     parent[child] = current; // 부모 노드 저장
