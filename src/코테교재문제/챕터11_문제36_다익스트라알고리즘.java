@@ -3,7 +3,7 @@ import java.util.*;
 public class 챕터11_문제36_다익스트라알고리즘 {
 	public static class Node{
 		public int node;
-		public int price;
+		public int price; // 시작노드부터 node 까지의 거리를 계속해서 갱신시키며 담는 변수
 		public Node(int n, int p) {
 			node = n;
 			price = p;
