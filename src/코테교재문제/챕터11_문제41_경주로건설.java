@@ -46,7 +46,7 @@ public class 챕터11_문제41_경주로건설 {
 		}
 		
 		
-		
+		return 1;
 	}
 	public static void init(int[][] board) {
 		N= board.length; // 보드판 면 길이 초기화
