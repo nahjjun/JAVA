@@ -2,8 +2,8 @@ package 자바어플리케이션;
 import java.awt.*;
 
 import javax.swing.*;
-public class 자바_240919_예제1 extends JFrame{
-	public 자바_240919_예제1() {
+public class chapter8_예제1 extends JFrame{
+	public chapter8_예제1() {
 		Toolkit kit = Toolkit.getDefaultToolkit();
 		Dimension screenSize = kit.getScreenSize();
 		
@@ -26,6 +26,6 @@ public class 자바_240919_예제1 extends JFrame{
 		this.setVisible(true);
 	}
 	public static void main(String[] args) {
-		자바_240919_예제1 frame = new 자바_240919_예제1();	
+		chapter8_예제1 frame = new chapter8_예제1();	
 	}
 }
