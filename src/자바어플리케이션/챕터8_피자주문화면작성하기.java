@@ -1,8 +1,8 @@
 package 자바어플리케이션;
 import javax.swing.*;
 import java.util.*;
-public class chapter8_피자주문화면작성하기 extends JFrame{
-	public chapter8_피자주문화면작성하기() {
+public class 챕터8_피자주문화면작성하기 extends JFrame{
+	public 챕터8_피자주문화면작성하기() {
 		setTitle("피자 주문 화면 작성하기");
 		setSize(600,150);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

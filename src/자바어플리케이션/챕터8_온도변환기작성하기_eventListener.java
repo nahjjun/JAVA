@@ -7,12 +7,12 @@ import java.math.RoundingMode;
 
 import javax.swing.JTextField;
 
-public class chapter8_온도변환기작성하기_eventListener implements ActionListener{
+public class 챕터8_온도변환기작성하기_eventListener implements ActionListener{
 	private JTextField t1;
 	private JTextField t2;
 	private double Fahrenheit; // 화씨 온도 저장
 	private double Celsius; // 섭씨 온도 저장
-	public chapter8_온도변환기작성하기_eventListener(JTextField t1, JTextField t2) {
+	public 챕터8_온도변환기작성하기_eventListener(JTextField t1, JTextField t2) {
 		this.t1 = t1;
 		this.t2 = t2;		
 	}

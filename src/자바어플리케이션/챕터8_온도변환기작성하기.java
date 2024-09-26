@@ -2,8 +2,8 @@ package 자바어플리케이션;
 import java.util.*;
 import javax.swing.*;
 import java.awt.*;
-public class chapter8_온도변환기작성하기 extends JFrame{
-	public chapter8_온도변환기작성하기() {
+public class 챕터8_온도변환기작성하기 extends JFrame{
+	public 챕터8_온도변환기작성하기() {
 		setTitle("온도 변환기 작성하기");
 		setSize(300, 200);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -19,7 +19,7 @@ public class chapter8_온도변환기작성하기 extends JFrame{
 		JTextField t2 = new JTextField(20);
 		
 		JButton b = new JButton("변환");
-		b.addActionListener(new chapter8_온도변환기작성하기_eventListener(t1,t2));
+		b.addActionListener(new 챕터8_온도변환기작성하기_eventListener(t1,t2));
 		
 		p1.add(j1);
 		p1.add(t1);
@@ -34,6 +34,6 @@ public class chapter8_온도변환기작성하기 extends JFrame{
 		setVisible(true);
 	}
 	public static void main(String[] args) {
-		chapter8_온도변환기작성하기 frame = new chapter8_온도변환기작성하기();
+		챕터8_온도변환기작성하기 frame = new 챕터8_온도변환기작성하기();
 	}
 }
