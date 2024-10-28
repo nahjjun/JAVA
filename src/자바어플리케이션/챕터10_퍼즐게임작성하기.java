@@ -19,7 +19,7 @@ public class 챕터10_퍼즐게임작성하기 extends JFrame implements ActionL
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       setLayout(new BorderLayout());
       
-      keyPad = new int[10];
+      int[] keyPad = new int[10];
       keyPad[9] = 1; // 비어있으면 1
       buttons = new JButton[10];
       for(int i=0; i<10; ++i) {
@@ -41,9 +41,7 @@ public class 챕터10_퍼즐게임작성하기 extends JFrame implements ActionL
       pack();
       setVisible(true);
    }
-   private static int nearEmpty(int location, int[] keyPad) { // 근처가 비지 않았다면 -1을, 비었다면 해당 위치를 반환해주는 함수
-      
-   }
+   
    @Override
    public void actionPerformed(ActionEvent e) {
       JButton b = (JButton)e.getSource();
